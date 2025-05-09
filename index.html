@@ -1,0 +1,107 @@
+<!--<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suivi de remboursement</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <section class="credit-info">
+      <h2>Informations sur le crédit</h2>
+      <div class="info-grid">
+        <div><strong>Montant HT :</strong> 1 311,55 €</div>
+        <div><strong>Montant TTC :</strong> 1 573,86 €</div>
+        <div><strong>Total crédit :</strong> 1 756,74 €</div>
+        <div><strong>Nombre d'échéances :</strong> 24</div>
+        <div><strong>Montant par échéance :</strong> 76,38 €</div>
+        <div><strong>Échéances payées :</strong> 11</div>
+        <div><strong>Montant remboursé théorique :</strong> 676,62 €</div>
+        <div><strong>Montant restant théorique :</strong> 1 080,12 €</div>
+        <div><strong>Payer par Titan :</strong> 152,76 €</div>
+        <h2>Progressions 11 / 24</h2>
+      </div>
+      <div class="progress-bar">
+        <div class="progress" style="width: 45.8%"></div>
+      </div>
+    </section>
+
+    <section class="payment-history">
+      <h2>Historique des paiements</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Statut</th>
+            <th>Montant</th>
+            <th>Date de prélèvement</th>
+          </tr>
+        </thead>
+        <tbody id="payment-table">-->
+          <!-- Lignes insérées dynamiquement par JS -->
+        <!--</tbody>
+      </table>
+      <p class="footer">Puis des échéances à venir chaque mois - La fin théorique est en Mars 2026</p>
+    </section>
+  </div>
+  <script src="js/app.js"></script>
+</body>
+</html>-->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Suivi de Remboursement - Crédit DSA TITAN</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <section class="credit-info">
+      <h2>Informations sur le crédit</h2>
+      <div class="info-grid">
+        <div><strong>Total du crédit :</strong> 397,00 € €</div>
+        <div><strong>Reste à payer :</strong> 297,00 €</div>
+        <div><strong>Montant déjà payer :</strong> 100,00 €</div>
+      </div>
+    </section>
+
+    <section class="payment-history">
+      <h2>Historique des paiements</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Paiements</th>
+            <th>Statut</th>
+            <th>Montant</th>
+            <th>Heures</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>09/05/2024</td>
+            <td><span class="badge paye">Payé</span></td>
+            <td>100,00 €</td>
+            <td>16h42</td>
+          </tr>
+          <tr>
+            <td>13/05/25</td>
+            <td><span class="badge next">Bientôt</span></td>
+            <td>297,00 €</td>
+            <td>Le plutôt possible !</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="legend">
+      <div class="hide-on-mobile">
+        <h3>Legende :</h3>
+        <span class="badge paye">Payé</span> <strong>= A était payer</strong> | <span class="badge non">Accident</span> <strong>= Non Payer</strong> | <span class="badge retar">Retard</span> <strong>= Payer en Retard</strong> | <span class="badge next">Bientôt</span> <strong>= Prochain Prélévement</strong>
+      </div>
+    </section>
+  </div>
+  <script src="js/app.js"></script>
+</body>
+</html>
